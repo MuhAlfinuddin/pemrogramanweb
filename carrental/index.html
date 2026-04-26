@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="Menu">
+    <div class="logo">CARRENTAL</div>
+        <a href="#home">Home</a>
+        <a href="#Cars">Cars</a>
+        <a href="#About">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#faq">FAQ</a>
+    </nav>
+
+    <div id="search">
+        <div class="title">
+            <div class="running-text">
+               <p id="home">"WELCOME! CARRENTAL - Easy, Fast, and Safe Car Rental Solutions.🚗</p>
+            </div><br><br><br><br><br>
+            <h1 id="About">Car Rental</h1>
+            <p style="color: greenyellow;"> <strong>Find the perfect car for your next adventure</strong></p>
+            <hr>
+        </div>
+        <div class="form-container">
+            <div class="form-group">
+                <label for="pickup">Rental Location:</label>
+                <select id="pickup" name="pickup">
+                    <option value="">Select Location</option>
+                    <option value="location1">Yogyakarta</option>
+                    <option value="location2">Bali</option>
+                    <option value="location2">Bantul</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pickup-date">Rental Start Date:</label>
+                <input type="date" id="pickup-date" name="pickup-date">
+            </div>
+            <div class="form-group">
+                <label for="return-date">Rental End Date:</label>
+                <input type="date" id="return-date" name="return-date">
+            </div>
+            <button type="submit">Search</button>
+        </div><br>
+        <div class="tentang">
+        <p>
+        Car Rental is a trusted car rental service that provides a wide selection of quality vehicles.to meet your travel needs.
+        We are committed to providing the best service by prioritizing 
+        customer comfort, safety and satisfaction on every trip 
+        Enjoy a hassle-free trip with Car Rental.
+        </p>
+    </div>
+    </div>
+
+    <div id="Cars" class="car-list">
+        <div class="title-wrapper">
+    <h2 class="title-glass">Car List</h2>
+    </div>
+    <div class="car-item">
+    <img src="NISSAN GTR.jpg" alt="Nissan GTR">
+    <h3>NISSAN GTR</h3>
+    <p>Price sewa : Rp 11.350.000/Day</p>
+    <p>Performa tinggi, sport premium</p>
+    <a href="https://whatsform.com/b8z-87" class="rent-btn">Rent Now</a>
+    </div>
+
+    <div class="car-item">
+    <img src="MAZDA 3.jpeg" alt="Mazda 3">
+    <h3>MAZDA HATCHBACK 3</h3>
+    <p>Price sewa : Rp 3.150.000/Day</p>
+    <p>Stylish, irit, nyaman harian</p>
+    <a href="https://whatsform.com/b8z-87" class="rent-btn">Rent Now</a>
+    </div>
+
+    <div class="car-item">
+    <img src="BMW M4 COMPETITION.jpg" alt="BMW M4">
+    <h3>BMW M4 COMPETITION</h3>
+    <p>Price sewa : Rp 7.550.000/Day</p>
+    <p>Mewah, cepat, performa tinggi</p>
+    <a href="https://whatsform.com/b8z-87" class="rent-btn">Rent Now</a>
+    </div>
+
+    <div class="car-item">
+    <img src="ALPHARD.jpg" alt="Alphard">
+    <h3>ALPHARD</h3>
+    <p>Price sewa : Rp 2.990.000/Day</p>
+    <p>Kabin luas, nyaman keluarga</p>
+    <a href="https://whatsform.com/b8z-87" class="rent-btn">Rent Now</a>
+    </div>
+
+    <div class="car-item">
+    <img src="FORD MUSTANG.jpg" alt="Mustang">
+    <h3>FORD MUSTANG</h3>
+    <p>Price sewa : Rp 6.105.000/Day</p>
+    <p>Muscle car, tenaga besar</p>
+    <a href="https://whatsform.com/b8z-87" class="rent-btn">Rent Now</a>
+    </div>
+
+    <div class="car-item">
+    <img src="LAND CRUISER.jpg" alt="Land Cruiser">
+    <h3>LAND CRUISER</h3>
+    <p>Price sewa : Rp 8.270.000/Day</p>
+    <p>Off-road kuat, SUV tangguh</p>
+    <a href="https://whatsform.com/b8z-87" class="rent-btn">Rent Now</a>
+    </div>
+
+    <div class="car-item">
+    <img src="PORSCHE.jpg" alt="Porsche">
+    <h3>PORSCHE</h3>
+    <p>Price sewa : Rp 10.290.000/Day</p>
+    <p>Sport mewah, desain elegan</p>
+    <a href="https://whatsform.com/b8z-87" class="rent-btn">Rent Now</a>
+    </div>
+
+    <div class="car-item">
+    <img src="SUPRA MK5.jpg" alt="Supra MK5">
+    <h3>SUPRA MK5</h3>
+    <p>Price sewa : Rp 5.700.000/Day</p>
+    <p>Sport cepat, handling presisi</p>
+    <a href="https://whatsform.com/b8z-87" class="rent-btn">Rent Now</a>
+    </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <br>
+        <hr>
+        <br>
+        <form action="/submit" method="post" id="Contact">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Masukan Nama Anda"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Masukan Email Anda"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required placeholder="Masukan Pesan"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        
+    </form><br>
+    <hr>
+    </div>
+
+    <div class="faq" id="faq">
+    <h2 id="faq" class="title-glass">FAQ</h2>
+
+    <div class="faq-item">
+        <h3>How to rent a car?</h3>
+        <p>: Click the "Rent Now" button then fill in the available booking form.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Is self-drive available?</h3>
+        <p>: Yes, self-drive is available with terms and conditions.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>What are the payment methods?</h3>
+        <p>: We accept bank transfers and digital payments.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Is a driver available?</h3>
+        <p>: Services available with professional drivers.</p>
+    </div>
+</div>
+</body>
+
+</html>
