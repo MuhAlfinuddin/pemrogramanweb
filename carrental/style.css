@@ -172,6 +172,7 @@ body {
     padding: 0px 5em 50px 5em;
     align-items: start;
     background-color: #1b1414b1;
+    border-top: 5px solid black;
 }
 
 .car-list h2 {
@@ -273,22 +274,48 @@ body {
 }
 
 .contact {
-    text-align: center;
-    color:maroon;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    text-align: left;
+    color:rgb(0, 0, 0);
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    background-color: #0b44ff17;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    padding-left: 7%;
+    
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    margin: auto;
+    gap: 60px;
+}
+
+.contact-form {
+    flex: 1;
     padding-top: 20px;
 }
+
+
+.contact-info,
+.sosmed {
+    flex: 1;
+}
+
 
 .faq {
     max-width: 900px;
     margin: 50px auto;
     padding: 0px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .faq-item {
-    background: rgba(8, 89, 188, 0.325);
+    background: rgba(8, 89, 188, 0.584);
     padding: 15px 20px;
     margin-bottom: 15px;
     border-radius: 10px;
