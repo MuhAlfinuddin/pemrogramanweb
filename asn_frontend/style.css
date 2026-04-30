@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.26);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+nav {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    padding: 10px 20px;
+
+    display: flex;
+    align-items: center;
+
+    background: rgba(0,0,0,0.6);
+    border-radius: 10px;
+
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+}
+
+nav a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:first-of-type {
+    margin-left: auto;
+}
+
+nav a:hover {
+    color: lightblue;
+}
+
+.hero {
+    height: 100vh;
+
+    background: url("https://i.pinimg.com/1200x/e5/7e/32/e57e3206fa458c41ffe495f8823c4c58.jpg") center/cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-text {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    background-color: rgba(50, 140, 219, 0.564);
+    font-size: 60px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.hero p {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.form-container {
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.form-container button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tentang {
+    padding: 50px;
+    text-align: center;
+    background: white;
+    max-width: 850px;
+    margin: 70px auto;
+    padding: 35px;
+    text-align: center;
+    line-height: 1.9;
+    color: rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.25),
+    inset 0 1px 1px rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.15);
+    transition: 0.4s;
+}
+
+.tentang:hover {
+    transform: translateY(-8px) scale(1.01);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,0.35),
+    inset 0 1px 1px rgba(255,255,255,0.2);
+}
+
+.tentang p {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    
+}
+.tentang::before {
+    content: "Profil sekolah";
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.program {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 50px;
+    flex-wrap: wrap;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.program h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Opsi {
+    padding: 20px;
+    background: lightblue;
+    border-radius: 10px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.Opsi:hover {
+    transform: translateY(-10px);
+}
+
+.contact {
+    padding: 50px;
+    background: #eee;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
