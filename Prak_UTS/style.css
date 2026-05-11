@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #07094a;
+  color: rgb(255, 255, 255);
+  font-family: 'Outfit', sans-serif;
+  overflow-x: hidden;
+}
+
+.gradient {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(140px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.gradient1 {
+  width: 350px;
+  height: 350px;
+  background: #2563eb;
+  top: -120px;
+  left: -120px;
+  opacity: .2;
+}
+
+.gradient2 {
+  width: 400px;
+  height: 400px;
+  background: #3b82f6;
+  right: -150px;
+  bottom: -150px;
+  opacity: .15;
+}
