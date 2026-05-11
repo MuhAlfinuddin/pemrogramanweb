@@ -37,3 +37,207 @@ body {
   bottom: -150px;
   opacity: .15;
 }
+
+.loader {
+  position: fixed;
+  inset: 0;
+  background: #050816;
+  z-index: 999999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity .8s, visibility .8s;
+}
+
+.loader.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  pointer-events: none;
+}
+
+.loader-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 8px;
+  color: white;
+  z-index: 2;
+  margin-bottom: 6px;
+}
+
+.loader-logo span { color: #60a5fa; }
+
+.loader-tagline {
+  font-size: .72rem;
+  letter-spacing: 4px;
+  color: rgba(96, 165, 250, .55);
+  text-transform: uppercase;
+  z-index: 2;
+  margin-bottom: 28px;
+}
+
+.loader-progress-wrap {
+  width: 180px;
+  height: 2px;
+  background: rgba(255, 255, 255, .06);
+  border-radius: 99px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  z-index: 2;
+}
+
+.loader-progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #1d4ed8, #60a5fa, #1d4ed8);
+  background-size: 200% 100%;
+  border-radius: 99px;
+  animation: progressFill 2.8s ease-in-out forwards, shimmerBar 1.4s linear infinite;
+}
+
+@keyframes progressFill {
+  0%   { width: 0%; }
+  60%  { width: 75%; }
+  90%  { width: 92%; }
+  100% { width: 100%; }
+}
+
+@keyframes shimmerBar {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.loader-status {
+  font-size: .72rem;
+  color: rgba(183, 199, 223, .45);
+  letter-spacing: 2px;
+  z-index: 2;
+}
+
+.loader-status::after {
+  content: 'Preparing your koi experience...';
+  animation: statusText 2.8s steps(1) infinite;
+}
+
+@keyframes statusText {
+  0%   { content: 'Preparing your koi experience...'; }
+  33%  { content: 'Curating premium collection...'; }
+  66%  { content: 'Almost ready...'; }
+}
+
+.lb1 { width: 320px; height: 320px; background: #1d4ed8; top: -80px; left: -80px; opacity: .18; }
+.lb2 { width: 280px; height: 280px; background: #3b82f6; bottom: -60px; right: -60px; opacity: .12; }
+.lb3 {
+  width: 200px; height: 200px; background: #60a5fa;
+  top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: .06;
+  animation: blobPulse 4s ease-in-out infinite;
+}
+
+@keyframes blobPulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: .06; }
+  50%       { transform: translate(-50%, -50%) scale(1.4); opacity: .12; }
+}
+
+@keyframes bubbleFloat {
+  0%   { transform: translateY(0) scale(1); opacity: .6; }
+  100% { transform: translateY(-100vh) scale(.4); opacity: 0; }
+}
+
+.ripple-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(96, 165, 250, 0.22);
+  transform: translate(-50%, -50%);
+  animation: rippleOut 3.6s ease-out infinite;
+}
+
+.ripple:nth-child(1) { width: 140px; height: 140px; animation-delay: 0s; }
+.ripple:nth-child(2) { width: 200px; height: 200px; animation-delay: .6s; }
+.ripple:nth-child(3) { width: 270px; height: 270px; animation-delay: 1.2s; }
+.ripple:nth-child(4) { width: 350px; height: 350px; animation-delay: 1.8s; }
+
+@keyframes rippleOut {
+  0%   { opacity: .6; transform: translate(-50%, -50%) scale(.3); }
+  100% { opacity: 0;  transform: translate(-50%, -50%) scale(1); }
+}
+
+.koi-orbit {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  margin-bottom: 32px;
+  z-index: 2;
+}
+
+.orbit-svg {
+  position: absolute;
+  inset: -30px;
+  animation: orbitSpin 5s linear infinite;
+}
+
+@keyframes orbitSpin {
+  to { transform: rotate(360deg); }
+}
+
+.koi-center {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 35%, #1e3a6e, #050d24);
+  border: 1px solid rgba(96, 165, 250, .25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 40px rgba(37, 99, 235, .3), inset 0 0 30px rgba(37, 99, 235, .1);
+  overflow: hidden;
+}
+
+.koi-center::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 6px,
+    rgba(96, 165, 250, .04) 6px,
+    rgba(96, 165, 250, .04) 12px
+  );
+  animation: shimmerMove 3s linear infinite;
+}
+
+@keyframes shimmerMove {
+  from { background-position: 0 0; }
+  to   { background-position: 24px 24px; }
+}
+
+.koi-fish-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  animation: fishWiggle 2.5s ease-in-out infinite;
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes fishWiggle {
+  0%, 100% { transform: rotate(-6deg) translateX(-2px); }
+  50%       { transform: rotate(6deg)  translateX(2px); }
+}
+
