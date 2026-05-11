@@ -24,19 +24,37 @@ body {
 .gradient1 {
   width: 350px;
   height: 350px;
-  background: #2563eb;
-  top: -120px;
-  left: -120px;
-  opacity: .2;
+  background: #ffffff;
+  top: -150px;
+  left: -150px;
+  opacity: .4;
 }
 
 .gradient2 {
   width: 400px;
   height: 400px;
-  background: #3b82f6;
+  background: orange;
   right: -150px;
   bottom: -150px;
-  opacity: .15;
+  opacity: .4;
+}
+
+.gradient3 {
+  width: 350px;
+  height: 350px;
+  background: #980808;
+  bottom: -150px;
+  left: -150px;
+  opacity: .4;
+}
+
+.gradient4 {
+  width: 350px;
+  height: 350px;
+  background: #bdf309;
+  top: -150px;
+  right: -150px;
+  opacity: .4;
 }
 
 .loader {
