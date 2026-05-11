@@ -469,3 +469,63 @@ header {
   line-height: 2;
   color: #b7c7df;
 }
+
+.collection { padding: 0 8% 150px; }
+
+.section-title { margin-bottom: 70px; }
+
+.section-title h2 {
+  font-size: 5rem;
+  margin-top: 20px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+}
+
+.koi-box {
+  position: relative;
+  height: 620px;
+  overflow: hidden;
+  border-radius: 30px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: .5s;
+  border: 1px solid rgba(255, 255, 255, .08);
+}
+
+.koi-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: 1.2s;
+}
+
+.koi-box:hover img { transform: scale(1.1); }
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, .85), transparent);
+}
+
+.box-content {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  z-index: 3;
+}
+
+.box-content span { color: #7fb3ff; }
+
+.card-content h3{boxont-size: 3rem;
+  margin: 10px 0;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.box-content p { color: #dce7f5; }
+
